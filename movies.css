@@ -1,0 +1,79 @@
+/* CSS Variables */
+:root {
+    --default-text-color: #fff;
+    --logo-color: rgb(253, 206, 35);
+
+    --card-text-color: rgb(232, 233, 243);
+    --info-color: #7dabef;
+}
+
+body {
+    background-color: #000;
+    color: var(--default-text-color);
+    background-image: url("/assets/moviesBack.jpg");
+}
+
+/* NAVBAR */
+.fa-star {
+    color: var(--logo-color);
+}
+
+.site-name {
+    color: var(--logo-color);
+    position: absolute;
+    top: 0px;
+}
+
+/* Movie card*/
+.card {
+    border: 0;
+    background-color: #000000e2;
+
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--card-text-color);
+}
+
+.info-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--logo-color);
+}
+
+.information {
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--info-color);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+    #poster {
+        margin-top: 1rem;
+        border-radius: 5px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #title {
+        font-size: x-large;
+    }
+
+    h6 {
+        font-size: medium;
+    }
+
+    h5 {
+        font-size: medium;
+    }
+
+    #poster {
+        margin-top: 0px;
+        width: 100%;
+    }
+}
